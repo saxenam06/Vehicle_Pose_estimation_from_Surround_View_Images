@@ -5,7 +5,7 @@ In the paper of Xiao Liu, Lin Zhang et al. the main idea was to create a consist
 
 In contrast, I have again derived the Ground-Camera model equations with the SE(3) pose of a frame fixed to the vehicle rigid body as the only variable in optimization. This approach addresses directly the underlying reason of the main source behind the change of the camera poses which is in fact the change of the pose of Vehicle rigid body itself as the 4 cameras are rigidly mounted on the vehicle body. Therefore, I propose to estimate the optimum SE(3) pose of the Vehicle body that minimizes total photometric error for each of the adjacent camera pairs by calculating the difference in Intensity of the image pixels captured by one of the camera (in the pair) with the intensity of the image pixels obtained from the ground projections of the other camera (in the pair). The intensity difference is calculated in the image plane of the former. The projections are performed starting with the best initial known pose and later optimized until the photometric error reaches minimum.
 
-REFERENCES
-1.	Xiao Liu, Lin Zhang et al. Online Camera Pose Optimization for the Surround-view system, 383-391, MM '19: Proceedings of the 27th ACM International Conference o
+# REFERENCES
+1.	Xiao Liu, Lin Zhang et al. Online Camera Pose Optimization for the Surround-view system, 383-391, MM '19: Proceedings of the 27th ACM International Conference on Multimedia
 2.	T.D. Barfoot, State Estimation for Robotics. Cambridge University Press, 2017.  
 
